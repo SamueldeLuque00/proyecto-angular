@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ProyectoAngular</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <script>
+     var operador
+         var punto = false
+         var pantalla2 = document.getElementById("resultado2").value
+         var pantalla = document.getElementById("resultado").value
+            function uno(){
+                var pantalla = document.getElementById("resultado").value
+                document.getElementById("resultado").value=pantalla + "1";
+            }
+            function dos(){
+                var pantalla = document.getElementById("resultado").value
+                document.getElementById("resultado").value=pantalla + "2";
+            }
+            function tres(){
+            var pantalla= document.getElementById("resultado").value
+            document.getElementById("resultado").value=pantalla + "3"
+            }
+            function cuatro(){
+                var pantalla= document.getElementById("resultado").value
+                document.getElementById("resultado").value=pantalla + "4"
+            }
+            function cinco(){ 
+                var pantalla= document.getElementById("resultado").value
+                document.getElementById("resultado").value=pantalla + "5"
+            }
+            function seis(){ 
+                var pantalla= document.getElementById("resultado").value
+                document.getElementById("resultado").value=pantalla + "6"
+            }
+            function siete(){ 
+                var pantalla= document.getElementById("resultado").value
+                document.getElementById("resultado").value=pantalla + "7"
+            }
+            function ocho(){ 
+                var pantalla= document.getElementById("resultado").value
+                document.getElementById("resultado").value=pantalla + "8"
+            }
+            function nueve(){ 
+                var pantalla= document.getElementById("resultado").value
+                document.getElementById("resultado").value=pantalla + "9"
+            }
+            function cero(){ 
+                var pantalla= document.getElementById("resultado").value
+                document.getElementById("resultado").value=pantalla + "0"
+            }
+            function borrarc(){ 
+                var pantalla= document.getElementById("resultado").value
+                var pantalla2= document.getElementById("resultado2").value
+                document.getElementById("resultado").value=pantalla = ""
+                document.getElementById("resultado2").value=pantalla = ""
+                punto = false
+            }
+            function borrarce(){ 
+                var pantalla= document.getElementById("resultado").value
+                document.getElementById("resultado").value=pantalla = ""
+                punto = false
+            }
+            function borraruno(){
+                    var pantalla = document.getElementById("resultado").value
+                    var nueva = "";
+                    for( i=0; i<pantalla.length-1;i++)
+                    {
+                        nueva = nueva + pantalla[i];
+
+                    }
+                    pantalla = document.getElementById("resultado").value=pantalla = nueva
+                    //PANTALLA.Text = nueva;
+                    //var cadena = PANTALLA.Text;
+                    //cadena = cadena.substring(0, cadena.length - 1);
+                    //var pantalla= document.getElementById("resultado").value
+                    //pantalla = pantalla.substring(0, pantalla.length - 1);
+            }
+            function suma(){
+                    var pantalla2= document.getElementById("resultado2").value=  pantalla= document.getElementById("resultado").value
+                    document.getElementById("resultado").value=pantalla = "";
+                    operador = "+";
+                    punto = false
+            }
+            function menos(){
+                    var pantalla2= document.getElementById("resultado2").value=  pantalla= document.getElementById("resultado").value
+                    document.getElementById("resultado").value=pantalla = "";
+                    operador = "-";
+                    punto = false
+            }
+            function multiplicacion(){
+                    var pantalla2= document.getElementById("resultado2").value=  pantalla= document.getElementById("resultado").value
+                    document.getElementById("resultado").value=pantalla = "";
+                    operador = "*";
+                    punto = false
+            }
+            function division(){
+                    var pantalla2= document.getElementById("resultado2").value=  pantalla= document.getElementById("resultado").value
+                    document.getElementById("resultado").value=pantalla = "";
+                    operador = "/";
+                    punto = false
+            }
+            function porcentaje(){
+                    var pantalla2= document.getElementById("resultado2").value=  pantalla= document.getElementById("resultado").value
+                    document.getElementById("resultado").value=pantalla = "";
+                    operador = "%";
+                    punto = false
+            }
+            function raiz(){
+                    
+                    document.getElementById("resultado").value = Math.sqrt(document.getElementById("resultado").value)
+                    //PANTALLA.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(PANTALLA.Text)));
+            }
+            function decimal(){
+                if (punto==false)
+                    {
+                        pantalla= document.getElementById("resultado").value= pantalla= document.getElementById("resultado").value + ".";
+                        punto = true;
+                    }
+            }
+            function igual(){
+                     if(operador == "+")
+                    {
+                        var pantalla= document.getElementById("resultado").value = parseFloat( pantalla2= document.getElementById("resultado2").value) + parseFloat(pantalla= document.getElementById("resultado").value)
+                        punto = false
+                    }
+                    else if(operador == "-"){
+                        var pantalla= document.getElementById("resultado").value = (pantalla2= document.getElementById("resultado2").value) - (pantalla= document.getElementById("resultado").value)
+                        punto = false
+                    }
+                    else if(operador == "*"){
+                        var pantalla= document.getElementById("resultado").value = (pantalla= document.getElementById("resultado").value) * (pantalla2= document.getElementById("resultado2").value)
+                        punto = false
+                    }
+                    else if(operador == "/"){
+                        var pantalla= document.getElementById("resultado").value = (pantalla2= document.getElementById("resultado2").value) / (pantalla= document.getElementById("resultado").value)
+                        punto = false
+                    }
+                    else if(operador == "%"){
+                        var pantalla= document.getElementById("resultado").value = (pantalla= document.getElementById("resultado").value) * (pantalla2= document.getElementById("resultado2").value)/(100)
+                        punto = false
+                    }
+            }
+  </script>
+  <app-root></app-root>
+</body>
+</html>
