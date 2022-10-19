@@ -7,8 +7,7 @@ table {
     padding-bottom: 1px;
     box-shadow: 6px 5px 5px black;
 }
-
-.boton {
+button{
     /* border-radius: 7px; */
     border: 1px;
     padding: 7px;
@@ -19,7 +18,6 @@ table {
     /* background-position: 0 -195px; */
     font-family: 'Roboto', sans-serif;
     /* transition: all 1s; */
-    
 }
 .boton1{
     border: solid 2px black;
@@ -32,7 +30,7 @@ table {
     box-shadow: 2px 2px 2px black;
     
 }
-.boton:hover{
+button:hover{
     /* background-color: rgba(70, 102, 94, 0.541); */
     background-color: rgba(0, 0, 0, 0.774);
     border: solid 1px;
@@ -45,7 +43,7 @@ th, td {
     padding: 5px;
 }
 
-.cajat {
+.pant2 {
     height: 35px;
     width: 250px;
     text-align: right;
@@ -60,7 +58,7 @@ th, td {
     box-shadow: 2px 2px 2px black;
 
 }
-.cajat1{
+.pant1{
     height: 7px;
     width: 250px;
     text-align: right;
