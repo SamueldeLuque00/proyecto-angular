@@ -97,19 +97,19 @@ export class AppComponent {
     if(this.operador == "sumar"){
       let suma = Number(valor1) + Number(valor2);
       this.pantalla = suma.toString();
-      this.punto = false;
+      this.punto = true;
     }else if(this.operador == "restar"){
       let resta = Number(valor1) - Number(valor2);
       this.pantalla = resta.toString();
-      this.punto = false;
+      this.punto = true;
     }else if(this.operador == "multiplicar"){
       let multiplica = Number(valor1) * Number(valor2);
       this.pantalla = multiplica.toString();
-      this.punto = false;
+      this.punto = true;
     }else if(this.operador == "dividir"){
       let divide = Number(valor1) / Number(valor2);
       this.pantalla = divide.toString();
-      this.punto = false;
+      this.punto = true;
     }
   }
 }

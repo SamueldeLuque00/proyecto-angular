@@ -82,3 +82,16 @@ h1{
     padding-left: 40%;
 
 }
+.delete{
+    /* border-radius: 7px; */
+    border: 1px;
+    padding: 7px;
+    margin: 2px, 2px;
+    /* height: 25px; */
+    width: 50px;
+    background-color: rgba(148, 153, 153, 0.267);
+    /* background-position: 0 -195px; */
+    font-family: 'Roboto', sans-serif;
+    /* transition: all 1s; */
+    width: 120px;
+}
